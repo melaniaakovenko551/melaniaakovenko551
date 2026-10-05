@@ -1,0 +1,136 @@
+{
+  "style": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow",
+  "palette": [
+    "#17131E",
+    "#241B31",
+    "#0E0B14",
+    "#813EB6",
+    "#DE3B63",
+    "#F2708F",
+    "#32BBAA",
+    "#F0C04C",
+    "#F5EADC"
+  ],
+  "notes": "One art style for the whole project, repeated word for word at the head of every prompt (rule F.1c); photographic wording is banned everywhere. Every sprite that takes part in the mechanic declares its orientation in words (rule C.8), and the radially symmetric ones say so explicitly so nothing is mirrored or rotated by accident. No prompt argues about background colour - the pipeline cuts the background away (rule F.1b), so atmosphere and glow are the job of the two backgrounds, not of the sprites. Two sprites are 9-sliced (sprite_lane_track, sprite_btn_turn) and ask for a plain stretchable middle with identical ends, because their .meta carries a real spriteBorder; the lane rail's border is horizontal only, since it is drawn about 99x23 px and a vertical border would overlap itself. Every other sprite is square framed, which keeps the drawn size square and the aspect check quiet. There is no audio asset of any kind (rule C.20). No prompt contains the app name and no sprite carries lettering (hard rule 1) - the splash mark is the crystal inside the guard ring, an abstract shape. The icon hero is the single gold crystal.",
+  "assets": [
+    {
+      "name": "bg_main",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_main.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, a night carnival stage seen head on, a deep violet plinth in the centre under a single cool spotlight, soft neon haze drifting across the middle, dark violet-black sky above with a few distant bulb lights, the central safe area kept calm and uncluttered, the lower third darkened for controls, deep violet #17131E, violet #813EB6, gold #F0C04C, teal #32BBAA, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_game.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, the same night carnival stage but darker and softer, low contrast throughout so an interface overlay stays readable, a faint violet radial glow at the centre of the frame, muted neon haze, no bright highlights near the edges, deep violet #17131E, violet #813EB6, teal #32BBAA, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, no UI elements, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_crystal_core",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_crystal_core.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single faceted gold gemstone seen straight from the front, sharp cut facets catching warm light, a soft inner glow, gold #F0C04C with cream #F5EADC highlights, radially symmetric so it is never mirrored, one object only, centred, whole object inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_ring_guard",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_ring_guard.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single violet guard ring made of three solid armoured quarter sectors, the fourth quarter cut away completely and left empty so the gap is see-through, glowing neon edge along the inner and outer rim, violet #813EB6 with a brighter rim, the code sets its rotation so draw it with the open quarter pointing to the right, one object only, centred, whole object inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_gate_arc",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_gate_arc.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single glowing teal quarter arc, a thin open gateway bracket with bevelled ends and nothing filling the middle, teal #32BBAA with a bright neon edge, the code sets its rotation so draw the arc occupying the right hand quarter, one object only, centred, whole object inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_ring_glow",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_ring_glow.png",
+      "prompt": "cel-shaded toon game art, flat shading, neon rim light, carnival stage glow, ONE single soft violet radial halo, brightest at the centre and fading smoothly to nothing at the edge, no hard outline, violet #813EB6, radially symmetric so it is never mirrored, one object only, centred, whole shape inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_pulse_hazard",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_pulse_hazard.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single crimson faceted dart projectile seen from the side with its sharp nose pointing UP and a short trail of sparks behind it at the bottom, crimson #DE3B63 with a hot pink rim, one object only, centred, whole object inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_pulse_charge",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_pulse_charge.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single round teal orb of energy with a bright core and a soft glowing shell, teal #32BBAA, radially symmetric so it is never mirrored or rotated, one object only, centred, whole object inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_shard",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_shard.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single small gold crystal shard shaped like a cut diamond chip, clean facets and a warm glow, gold #F0C04C, symmetric so it is never mirrored, one object only, centred, whole object inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_lane_track",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_lane_track.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single narrow horizontal rail strip running left to right across the frame, a plain flat violet middle that can be stretched, glowing neon edges along the top and bottom, both the left end and the right end finished identically, violet #813EB6 with a teal rim, no decoration in the middle, one object only, centred, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_arena_disc",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_arena_disc.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single round carnival stage platform seen from directly above, very dark violet surface with a thin glowing gold rim around the edge, the middle left clean and almost empty so game pieces read on top of it, deep violet #17131E with gold #F0C04C rim, radially symmetric so it is never mirrored, one object only, centred, whole shape inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_btn_turn",
+      "type": "button",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_btn_turn.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single horizontal rounded rectangle button plate, a smooth violet gradient filling a plain flat middle that can be stretched, a glowing neon edge all the way around, evenly rounded corners of the same radius on all four corners, violet #813EB6 with a brighter rim, completely empty in the middle, one object only, centred, isolated, no background scene, no text, no letters, no icon, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_back",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_back.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, ONE single chevron arrow icon pointing LEFT, a thick bold stroke with rounded ends, cream #F5EADC, one object only, centred, whole shape inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_icon_pause",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_icon_pause.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, ONE single pause icon made of exactly two upright rounded bars side by side with an even gap between them, cream #F5EADC, symmetric so it is never mirrored, one object only, centred, whole shape inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_close_x",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_close_x.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, ONE single close icon made of two thick diagonal bars crossing in the middle, rounded ends, cream #F5EADC, symmetric so it is never mirrored, one object only, centred, whole shape inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_burst",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_burst.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, carnival stage glow, ONE single starburst of spark shards flying outward in every direction, nothing at all in the middle of the burst, cream #F5EADC and gold #F0C04C, radially symmetric so it is never mirrored, one object only, centred, whole shape inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    },
+    {
+      "name": "sprite_turn_hint",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/sprite_turn_hint.png",
+      "prompt": "cel-shaded toon game art, thick dark outline, flat shading, neon rim light, ONE single curved arrow bending CLOCKWISE, a thick bold stroke following a circular arc with one arrowhead at the clockwise end, cream #F5EADC with a teal rim, one object only, centred, whole shape inside a square frame, isolated, no background scene, no text, not a photo, not photorealistic"
+    }
+  ]
+}

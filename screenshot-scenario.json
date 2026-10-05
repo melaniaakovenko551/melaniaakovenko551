@@ -1,0 +1,88 @@
+{
+  "notes": "tapFrac is [x from left, y from TOP] of the SCREEN on a 1080x2400 device. Every UI point is converted from the 1242x2688 canvas through the AspecterSA AspectRatioFitter (FitInParent, 0.46205357), which letterboxes the panel to 1080x2337.4 with a 31.3 px band top and bottom. The opening wait covers SplashPanel.FirstAnimationTime, which is 10 s on the menu scene.",
+  "steps": [
+    {
+      "wait": 13,
+      "shot": "01_Menu"
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.792
+      ],
+      "label": "MODES",
+      "wait": 2,
+      "shot": "02_Modes"
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.3609
+      ],
+      "label": "SLOW",
+      "wait": 2,
+      "shot": "03_Modes_Selected"
+    },
+    {
+      "tapFrac": [
+        0.8704,
+        0.2884
+      ],
+      "label": "CLOSE",
+      "wait": 2
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.8536
+      ],
+      "label": "HOW TO PLAY",
+      "wait": 2,
+      "shot": "04_HowToPlay"
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.7304
+      ],
+      "label": "NEXT",
+      "wait": 2,
+      "shot": "05_HowToPlay_2"
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.7304
+      ],
+      "label": "START PLAYING",
+      "wait": 2
+    },
+    {
+      "tapFrac": [
+        0.5,
+        0.6948
+      ],
+      "label": "START",
+      "waitLoader": true,
+      "shot": "06_Game_Idle"
+    },
+    {
+      "tapFrac": [
+        0.2697,
+        0.875
+      ],
+      "label": "TURN LEFT",
+      "wait": 6,
+      "shot": "07_Game_Action"
+    },
+    {
+      "tapFrac": [
+        0.9227,
+        0.0746
+      ],
+      "label": "PAUSE",
+      "wait": 3,
+      "shot": "08_Pause"
+    }
+  ]
+}
